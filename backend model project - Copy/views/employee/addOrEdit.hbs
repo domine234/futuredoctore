@@ -1,0 +1,348 @@
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+
+
+
+{{!-- BUTTON STYLE --}}
+
+<style>
+
+#app{
+  cursor: pointer;
+  position: relative;
+  width: 180px
+}
+#message{
+  font-size: 18px;
+  color: #fff;
+  line-height: 1;
+  padding: 20px 25px;
+  text-align: center;
+  border-radius: 40px;
+  transition: 0.3s ease background-color, 0.3s ease box-shadow;
+  background: #1e2a78;
+}
+#send_btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  line-height: 1;
+  color: #fff;
+  padding: 18px 12px;
+  cursor: pointer;
+  transition: 0.3s ease transform;
+}
+#message.sending{
+  background-color: #ffd615;
+  box-shadow: 0 20px 30px -6px #ffd615;
+}
+#send_btn.sending{
+  transform: rotateZ(-90deg);
+  animation: shake 0.3s ease 0.5s infinite;
+}
+@keyframes shake{
+  10%, 90%
+  {
+    transform: translate3d(-1px,0,0) rotateZ(-90deg);
+  }
+    20%, 80%
+  {
+    transform: translate3d(1px,0,0) rotateZ(-90deg);
+  }
+    30%, 50%, 70%
+  {
+    transform: translate3d(-1px,0,0) rotateZ(-90deg);
+  }
+    40%, 60%
+  {
+    transform: translate3d(1px,0,0) rotateZ(-90deg);
+  }
+}
+
+#message.sent{
+  background-color: #ff1f5a;
+  box-shadow: 0 20px 30px -6px #ff1f5a;
+}
+
+#send_btn.sent{
+  transform: rotateZ(-90deg);
+  animation: moveUp 1s ease 0s forwards;
+}
+@keyframes moveUp{
+  0%{
+    margin-top: 0;
+    transform: scale(1) rotateZ(-90deg);
+  }
+  100%{
+    color: #ff1f5a;
+    margin-top: -100px;
+    transform: scale(0) rotateZ(-90deg);
+  }
+}
+
+
+
+</style>
+<script>
+    $(function () {
+  $("#app").on("click", function () {
+    setTimeout(function () {
+      $("#message").addClass("sending").text("Sending");
+      $("#send_btn").addClass("sending");
+    }, 0);
+
+    setTimeout(function () {
+      $("#message").addClass("sent").text("Sent");
+      $("#send_btn").addClass("sent");
+    }, 2600);
+    
+    setTimeout(function () {
+      $("#message").removeClass("sent").text("Sent");
+      $("#send_btn").removeClass("sent");
+      $("#message").removeClass("sending").text("Send");
+      $("#send_btn").removeClass("sending");
+    }, 3600);
+  });
+});
+
+</script>
+{{!-- BUTTON STYLE end --}}
+
+
+<style>
+  .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn-submit {
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: #ff524f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+</style>
+
+{{!-- heading style  start--}}
+<style>
+    /* === BASE HEADING === */ 
+
+h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+h1 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+h1 em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.twelve h1 {
+  font-size:26px; font-weight:700;  letter-spacing:1px; text-transform:uppercase; width:160px; text-align:center; margin:auto; white-space:nowrap; padding-bottom:13px;
+}
+.twelve h1:before {
+    background-color: #c50000;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 75px;
+    margin-bottom: 5px;
+}
+.twelve h1:after {
+    background-color: #c50000;
+    content: '';
+    display: block;
+  position:absolute; right:0; bottom:0;
+    height: 3px;
+    width: 75px;
+    margin-bottom: 0.25em;
+}
+
+</style>
+{{!-- heading style end --}}
+
+<script>
+    $(document).ready(function () {
+        $(".newfile").hide();
+
+
+    });
+    $(document).ready(function () {
+        $(".newbutton").click(function () {
+            $(".newfile").show();
+        });
+
+
+    });
+
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6">
+            <div class="twelve" style="margin-top: 20px;">
+            <h1 style="text-align: center;">{{viewTitle}}</h1></div>
+            <form action="/employee" method="POST" autocomplete="off" class="contact-form" style="margin-top: 20px;">
+                <input type="hidden" name="_id" value="{{employee._id}}">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" name="fullName" placeholder="Full Name"
+                        value="{{employee.fullName}}">
+                    <div class="text-danger">
+                        {{employee.fullNameError}}</div>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" name="email" placeholder="Email" value="{{employee.email}}">
+                    <div class="text-danger">
+                        {{employee.emailError}}</div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label>Mobile</label>
+                        <input type="text" class="form-control" name="mobile" placeholder="Mobile" maxlength="10"
+                            value="{{employee.mobile}}">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>DOB</label>
+                        <input type="date" class="form-control" name="calender" placeholder="Date of birth"
+                            value="{{employee.calender}}">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Age</label>
+                        <input type="number" class="form-control" name="age" placeholder="age"
+                            value="{{employee.age}}">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Weight</label>
+                        <input type="number" class="form-control" name="weight" placeholder=""
+                            value="{{employee.weight}}">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Height</label>
+                        <input type="number" class="form-control" name="height" placeholder=""
+                            value="{{employee.height}}">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label>Body temperature</label>
+                        <input type="number" class="form-control" name="city" placeholder="" 
+                            value="{{employee.city}}">
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label>Address</label>
+                        <input type="text" class="form-control" name="address" placeholder="" 
+                            value="{{employee.address}}" style="height: 80px;" >
+                    </div>
+                    
+
+
+                    {{!-- DOctor fields --}}
+
+    <h2 class="newbutton">Doctor Description</h2>
+    
+    <br>
+    <style>
+        .newfile{
+            width:100% ;
+        }
+    </style>
+                <div class="newfile">
+                    {{!-- <h2>Doctor Description</h2> --}}
+                     <div class="form-group">
+    <label></label>
+    <textarea id="" name="diseases" value="{{employee.diseases}}" style="width: 100%;"  ></textarea>
+  </div>
+                </div>
+
+
+                   
+                   <div class="form-group col-md-12" id="app" >
+                        <button type="submit" class="btn-submit"id="message" id="send_btn"  > <i class="fa fa-database"></i> Submit</button>
+                        <div id="send_btn"><i class="fa fa-database"></i></div>
+
+                    </div>
+
+                   
+                </div>
+            
+              
+            
+
+         </form>
+        </div>
+
+    </div> 
+</div>
+
+
+
+ 

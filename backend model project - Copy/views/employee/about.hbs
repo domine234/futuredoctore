@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+        
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans">
+
+<body>
+
+
+<!---marquee start-->
+
+
+
+
+
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel">
+    <div class="carousel-item active">
+      <img src="https://w0.peakpx.com/wallpaper/906/283/HD-wallpaper-team-teamwork-concepts-doctors-hospital-team-of-doctors-hands.jpg" class="d-block w-100" height="500px" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  
+  
+</div>
+
+<!--banner end-->
+
+
+<!---navigation start -->
+
+<style>
+    @import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+div.carousel-inner
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 3em 3em;
+	text-align: center;
+}
+
+div.carousel-inner a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 15px Raleway;
+    margin: 0px 10px;
+    padding: 20px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.blue
+{
+    background: #2e6592;
+}
+
+div.borderXwidth a:before, div.borderXwidth a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.borderXwidth a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderXwidth a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+
+.fa-user-md
+{
+    font-size:xx-large;
+}
+.fa-hospital-o
+{
+    font-size: xx-large;
+}
+
+.fa-ambulance
+{
+  font-size: xx-large;
+}
+.fa-heart{
+  font-size: xx-large;
+}
+.fa-book{
+    font-size: xx-large;
+}
+</style>
+    
+ 
+<div class="carousel-inner blue borderXwidth">
+  <a style="color: #FFF;" href="/employee/list" ><i class="fa fa-book" aria-hidden="true"></i>PATIENTS LISTS</a>
+  <a style="color: #FFF;" href="/employee/service" > <i class="fa fa-user-md" aria-hidden="true"></i> DOCTOR APPOINTMENT</a>
+  <a style="color: #FFF;" href="/employee" ><i class="fa fa-ambulance" aria-hidden="true"></i> ADD PATIENTS</a>
+  <a style="color: #FFF;" href="" ><i class="fa fa-hospital-o" aria-hidden="true"></i>   FIND HOSPITAL</a>
+  <a style="color: #FFF;" href="" ><i class="fa fa-heart" aria-hidden="true"></i> HEALTH AND WELLNESS</a>
+  
+  </div>
+  <br>
+
+<!--navigation end-->
+
+
+
+  <!-- Start Header -->
+
+
+<style>
+
+/***************************************************************************************/
+/* Start Global Rules */
+* {
+    font-family: 'Droid Sans', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End Global Rules */
+/***************************************************************************************/
+/* Start Header */
+.header {
+    background: url("") no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    min-height: 500px;
+    position: relative
+}
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color:#2e6592;
+    background-repeat: no-repeat;
+    
+}
+.header .overlay h1 {
+    font-size: 50px;
+    margin-top: 100px
+}
+.header .overlay .plan {
+    border: 4px solid #fff;
+    font-size: 24px;
+    width: 48%;
+    padding: 20px;
+    margin-right: 1%;
+    margin-left: 1%
+}
+.header .overlay .order {
+    border: 4px solid #fff;
+    font-size: 24px;
+    padding: 20px;
+    margin: 30px 1% 0
+}
+@media (max-width: 420px) {
+    .header .overlay h1 {
+        margin-top: 20px;
+        font-size: 50px
+    }
+    .header .overlay .plan {
+        float: none;
+        margin: 0 auto 20px;
+        font-size: 26px;
+    }
+}
+@media (max-width: 767px) {
+    .header .overlay h1 {
+        margin-top: 40px
+    }
+    .header .overlay .plan {
+        float: none;
+        margin: 0 auto 20px;
+        font-size: 26px
+    }
+}
+/* End Header */
+/* Start Features */
+.features {
+    padding: 30px 0;
+}
+.features .h1 {
+    font-size: 50px;
+    color: #555
+}
+.features .feat {
+    color: #555;
+    padding: 0 20px 0;
+    margin-bottom: 30px
+}
+.features .feat h2 {
+    margin: 0 10px 8px
+}
+.features .feat p {
+    line-height: 1.6;
+    margin: 0
+}
+@media (max-width: 767px) {
+    .features .feat {
+        text-align: center
+    }
+    .features .feat:nth-of-type(odd) {
+        background-color: #eee
+    }
+}
+@media (min-width: 768px) {
+    .features .feat:first-of-type {
+        width: 100%;
+    }
+    .features .feat:not(:first-of-type) {
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .features .feat {
+        width: 33.3333%;
+    }
+}
+/* End Features */
+/* Start About Us */
+.about-us {
+    padding: 30px 0;
+    background-color: #ececec
+}
+.about-us .h1 {
+    font-size: 50px;
+    color: #848484
+}
+.about-us .responsive-paragraph {
+    color: #848484;
+}
+/* End About Us */
+/***************************************************************************************/
+/* Start Media Query */
+@media (max-width: 767px) { /* Mobile & Tablet Rules */
+    .visible-xs {
+        display: block !important
+    }
+    .hidden-xs {
+        display: none !important
+    }
+    .responsive-paragraph {
+        font-size: 13px !important;
+        color: #333 !important;
+        letter-spacing: 1.4px;
+        text-align: justify
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { /* Small Screen Rules */
+    .container {
+        width: 750px
+    }
+    .visible-sm {
+        display: block !important
+    }
+    .hidden-sm {
+        display: none !important
+    }
+    .responsive-paragraph {
+        text-align: center;
+        font-size: 17px !important;
+        color: #555 !important;
+        letter-spacing: 1.3px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) { /* Medium Screen Rules */
+    .container {
+        width: 970px
+    }
+    .visible-md {
+        display: block !important
+    }
+    .hidden-md {
+        display: none !important
+    }
+    .responsive-paragraph {
+        font-size: 20px !important;
+        color: #777 !important;
+        letter-spacing: 1.1px;
+    }
+}
+@media (min-width: 1200px) { /* Large Screen Rules */
+    .container {
+        width: 1170px
+    }
+    .visible-lg {
+        display: block !important
+    }
+    .hidden-lg {
+        display: none !important
+    }
+}
+/* End Media Query */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Start My Framework */
+.text-center {
+    text-align: center
+}
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.clearfix {
+    clear: both
+}
+.visible-xs, .visible-sm, .visible-md, .visible-lg {
+    display: none
+}
+.float-left {
+    float: left
+}
+.float-right {
+    float: right
+}
+.h1 {
+    font-size: 2em
+}
+.responsive-paragraph {
+    line-height: 1.8;
+    font-size: 26px
+}
+/* End My Framework */
+
+</style>
+
+
+
+        <div class="header text-center">
+            <div class="overlay">
+                <div class="container">
+                    <h1>Best Doctors</h1>
+                    <br>
+                    <div class="plan float-left">Dr.Domine</div>
+                    <div class="plan float-left">Dr.Naveen</div>
+                    <br>
+                    <div class="plan float-left">Dr.Rithessh</div>
+                    <div class="plan float-left">Dr.Dinesh</div>
+                    <div class="clearfix"></div>
+                    <div class="order hidden-xs">Weekend available  </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+        <!-- Start Features -->
+        <div class="features">
+            <div class="container">
+                <h2 class="h1 text-center">WHO CHOOSE HEALTH CARE</h2><br>
+                <div class="feat float-left" >
+                   
+                    <p class="responsive-paragraph"><ul><li>Established by Dr.Domine in 2022,  Healthcare has a robust presence across the healthcare ecosystem. From routine wellness & preventive health care to innovative life-saving treatments and diagnostic services, Hospitals has touched more than 120 million lives from over 120 countries, offering the best clinical outcomes.</li></ul> </p>
+                </div>
+                <div class="feat float-left">
+                    <h2 style="color:#2e6592;"><b> SUPPORT YOUR TEAM   WITH THE BEST SOLUTION AND SERVICE EXPERTS IN THE INDUSTRY </b></h2>
+                    <p class="responsive-paragraph" style="font-size: large;">Origami Risk was ranked the #1 Healthcare Safety, Risk & Compliance Management  Solution in the 2022  Best in KLAS  report, with an overall score of 92.2. This recognized our continued dedication to providing our clients with the market leading healthcare solution suite and client service team.  </p>
+                </div>
+                <div class="feat float-left">
+                    <img src="https://w0.peakpx.com/wallpaper/587/794/HD-wallpaper-medical-office-hospital.jpg" alt="" width="100%" style="margin-right: 40px;">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- End Features -->
+        <!-- Start About Us -->
+        <div class="about-us">
+            <div class="container">
+                <h2 class="h1 text-center" style="color:#2e6592;"><b> Comprehensive Healthcare Risk Technology</b></h2>
+                <p class="responsive-paragraph">Origami Risk provides integrated solutions that redefine how you capture and analyze your organization’s risk, claims, safety, quality, and compliance data. Workflow and automation tools make your team more efficient, help to simplify insurance management, improve the productivity of your claims team, and reduce administrative burden, allowing staff to spend more time on patient care.</p>
+            </div>
+        </div>
+        <!-- End About Us -->
+        
+<div class="container">
+  <div class="row">
+    <div class="col-lg-1">
+
+    </div>
+  <div class="col-lg-5">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+           <iframe width="80%" height="80%" src="https://www.youtube.com/embed/xgF_b6NI_p8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        </div>
+
+<style>
+           
+     .orginal{
+      
+     }
+
+</style>
+
+          <div class="col-lg-6">
+          <div class="card-body">
+             <h2 class="h1 text-left" style="color:#2e6592;" ><b> Origami Healthcare Overview Video </b></h2>
+
+         <h5>  Watch the video to learn how Origami's integrated healthcare suite can help organizations manage risk, claims, insurance, safety, and quality programs and data in a single, centralized platform.</h5>
+           </div>
+        </div>
+      </div>
+</div>
+</div>
+<style>
+    footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #3a0ca3;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3vw;
+  padding: 72px 8vw;
+  color: #e2e0e5;
+}
+.footer .h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.footer .brand .h5 {
+  display: flex;
+  text-transform: uppercase;
+  gap: 16px;
+}
+.footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer .brand {
+  max-width: 200px;
+  gap: 24px;
+  line-height: 1.5;
+}
+
+.newsletter {
+  position: relative;
+}
+.newsletter input {
+  font-size: 16px;
+  font-weight: 400;
+  height: 53px;
+  padding: 6px 6px 6px 16px;
+  background: transparent;
+  border: 1px solid #e2e0e5;
+  color: #e2e0e5;
+  outline: none;
+  border-radius: 14px;
+  font-size: 16px;
+  width: 370px;
+}
+.newsletter button {
+  position: absolute;
+  padding: 16px 40px;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f2c855;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3a0ca3;
+  right: 6px;
+  top: 6px;
+  transition: all 0.5s;
+}
+.newsletter button:hover {
+  cursor: pointer;
+  border-radius: 70px 10px 70px 10px;
+  box-shadow: -10px 0px #e2e0e5;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.social .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.21);
+  border-radius: 20% 20% 20% 20%;
+}
+.social a {
+  transition: all 0.3s ease;
+}
+.social a:hover {
+  box-shadow: 0px 0px 20px 1px #726193;
+  transform: scale(1.1);
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 32px 8vw;
+  background-color: #f2c855;
+}
+.copyright a {
+  color: #0a001a;
+  margin: 0 1vw 0 1vw;
+}
+.copyright a:last-child {
+  margin-right: 0;
+}
+.copyright a::before {
+  background-color: #0a001a !important;
+}
+
+p,
+a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  color: #e2e0e5;
+  text-decoration: none;
+}
+
+footer a {
+  position: relative;
+}
+footer a:not(.social-icon)::before {
+  background-color: #e2e0e5;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+footer a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+@media (max-width: 960px) {
+  .footer {
+    gap: 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .footer .brand {
+    max-width: 400px !important;
+  }
+
+  .subscribe {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .subscribe .newsletter {
+    width: 100%;
+    max-width: 370px;
+  }
+  .subscribe .newsletter input {
+    width: calc(100% - 22px);
+  }
+
+  .copyright {
+    padding: 32px 5vw;
+  }
+  .copyright p,
+.copyright a {
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 72px 8vw;
+  }
+}
+@media (max-width: 360px) {
+  p,
+a {
+    font-size: 14px;
+  }
+
+  .footer .h5 {
+    font-size: 16px;
+  }
+}
+</style>
+
+
+<footer>
+    <section class="footer">
+      <div class="brand">
+        <div class="h5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path fill="#F2C855" d="M3.671 2.832H3.67a.855.855 0 0 0-.854.859V16.57c0 .472.386.858.86.859 1.999.005 5.348.421 7.658 2.839V6.79c0-.16-.04-.31-.118-.435C9.32 3.3 5.675 2.837 3.671 2.832ZM21.185 16.57V3.69a.855.855 0 0 0-.854-.859h-.002c-2.004.005-5.648.469-7.544 3.523a.823.823 0 0 0-.118.435v13.477c2.31-2.418 5.66-2.835 7.659-2.84a.862.862 0 0 0 .86-.858Z"/>
+  <path fill="#F2C855" d="M23.141 5.802h-.622V16.57a2.197 2.197 0 0 1-2.19 2.192c-1.696.004-4.492.336-6.472 2.21 3.425-.839 7.035-.294 9.092.175A.857.857 0 0 0 24 20.31V6.661a.86.86 0 0 0-.859-.859ZM1.481 16.57V5.801H.86a.86.86 0 0 0-.86.86v13.648a.857.857 0 0 0 1.05.837c2.058-.47 5.668-1.014 9.093-.176-1.98-1.873-4.776-2.205-6.472-2.209a2.197 2.197 0 0 1-2.19-2.192Z"/>
+</svg>
+ Read me.</div>
+        <p>General Science is a group of subjects Physics, Chemistry, Biology,Life Science</p>
+        <div class="social">
+          <a href="#twitter" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 20 16">
+              <path fill="#F2C855" d="M6.038 16c7.246 0 11.208-6.155 11.208-11.492 0-.175-.003-.35-.011-.523A8.127 8.127 0 0 0 19.2 1.894a7.702 7.702 0 0 1-2.262.636A4.038 4.038 0 0 0 18.67.296c-.773.47-1.62.802-2.501.98A3.89 3.89 0 0 0 13.293 0c-2.175 0-3.94 1.809-3.94 4.039 0 .317.035.625.103.92C6.182 4.792 3.28 3.184 1.336.74a4.107 4.107 0 0 0-.533 2.03c0 1.402.695 2.639 1.753 3.363a3.837 3.837 0 0 1-1.784-.505v.051c0 1.956 1.357 3.59 3.16 3.96a3.853 3.853 0 0 1-1.78.069c.502 1.605 1.956 2.773 3.68 2.805A7.78 7.78 0 0 1 0 14.185 10.951 10.951 0 0 0 6.038 16"/>
+            </svg>
+          </a>
+          <a href="#fb" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" fill="none" viewBox="0 0 11 20">
+              <path fill="#F2C855" d="m10.009 11.249.555-3.618h-3.47V5.284c0-.99.484-1.955 2.04-1.955h1.577V.244S9.28 0 7.907 0c-2.858 0-4.73 1.733-4.73 4.871v2.76H0v3.618h3.178V20h3.91v-8.751h2.92Z"/>
+            </svg>
+          </a>
+          <a href="#youtube" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" fill="none" viewBox="0 0 18 14">
+              <path fill="#F2C855" d="m9.37 13.043-3.6-.066c-1.166-.023-2.334.023-3.477-.215C.554 12.407.43 10.666.303 9.205a24.955 24.955 0 0 1 .225-6.181c.19-1.143.934-1.825 2.086-1.899C6.5.855 10.413.888 14.29 1.013c.41.012.822.075 1.226.147 1.994.349 2.042 2.322 2.172 3.984a22.587 22.587 0 0 1-.172 5.032c-.198 1.38-.576 2.538-2.172 2.65-2 .146-3.953.263-5.957.226 0-.009-.012-.009-.018-.009ZM7.254 9.55c1.506-.865 2.984-1.716 4.482-2.575-1.51-.865-2.984-1.716-4.482-2.575v5.15Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="about">
+        <div class="h5">About Us</div>
+        <a href="#">Address</a>
+        <a href="#">Community update</a>
+        <a href="#">Press Kit</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="subjects">
+        <div class="h5">Subjects</div>
+        <a href="#">English</a>
+        <a href="#">Math</a>
+        <a href="#">Science</a>
+        <a href="#">Social Sceince</a>
+      </div>
+      <div class="product">
+        <div class="h5">Product</div>
+        <a href="#">Pricing</a>
+        <a href="#">Enterprice</a>
+        <a href="#">Integrate</a>
+        <a href="#">What’s New</a>
+      </div>
+      <div class="subscribe">
+        <div class="h5">Subscribe Now</div>
+        <div class="newsletter">
+          <input type="email" name="email" placeholder="Email Address">
+          <button type="submit" name="submit">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="copyright">
+      <p><span>©</span> 2022 Rights Reserved, Domine</p>
+      <p>
+        <a href="#privacy">Privacy</a>
+        |
+        <a href="#terms">Terms & Conditions</a>
+        |
+        <a href="#security">Security & Privacy by Taqwah Digital</a>
+      </p>
+    </section>
+  </footer>
+</body>
+</html>
